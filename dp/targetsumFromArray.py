@@ -18,7 +18,7 @@ class solution:
         return mem[target]
     def targetSumThenReturnArray(self, target, arr, mem={}):
         if target in mem:
-            return mem[target]
+            return None
         if target == 0:
             return []
         
@@ -90,6 +90,6 @@ class solution:
 
 c = solution()
 print(c.targetSum(25, [7,14]))
-print(c.targetSumThenReturnArray(8, [2,3,5]))
+print(c.targetSumThenReturnArray(8, [1,2,3,5]))
 print(c.bestComination(8, [2,3,5]))
-print(c.allCombination(8, [2,3,5]))
+print(c.allCombination(8, [1,2,3,5]))
